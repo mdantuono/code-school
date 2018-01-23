@@ -15,3 +15,5 @@ server.on('close', function() {
 });
 
 server.listen(8080);
+
+//ON REQUEST AND CLOSE EVENTS TO THE SERVER
