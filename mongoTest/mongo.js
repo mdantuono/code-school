@@ -12,7 +12,7 @@ var mongo = function(db) {
   );
   //Find all monsters whos attack is between 10 and 20 but do not include the monsters health or style
   mongo.monsters.find(
-      {"attack": {"$gte":10, "$lte": 20}},
+      {"attack": {"$gte": 10, "$lte": 20}},
       {"health": false, "style": false}
   );
   //Find out how many monsters are in the collection
