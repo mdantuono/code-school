@@ -1,7 +1,16 @@
 body {
-    background-color:#10ac84;
+    background-color:lightgrey;
 }
-h1 {
-    font-family: 'Shrikhand', cursive;
+h1, h3 {
+    font-family: 'Bellefair', serif;
     text-align: center;
+}
+h4, p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+img {
+    width: 200px;
+    border-radius:30px;
+    box-shadow: 0 6px 20px 0 black;
 }
