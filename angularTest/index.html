@@ -13,25 +13,33 @@
 <body ng-app="store">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <h1>Mike's Exotics</h1>
-    <h3>.: exotic car rentals :.</h3><br><br>
-    <h4>Our Fleet:</h4><br>
-    <div ng-controller="StoreController as store">
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <p>{{store.product[0].name}}</p>
-                <img ng-src="{{store.product[0].image}}">
-            </div>
-            <div class="col-sm-4">
-                <p>{{store.product[1].name}}</p>
-                <img ng-src="{{store.product[1].image}}">
-            </div>
-            <div class="col-sm-4">
-                <p>{{store.product[2].name}}</p>
-                <img ng-src="{{store.product[2].image}}">
+    <div class="container">
+        <h1>Mike's Exotics</h1>
+        <h3>.: exotic car rentals :.</h3>
+        <hr>
+        <h4>Our Fleet:</h4><br>
+        <div ng-controller="StoreController as store">
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <p>{{store.product[0].name}}</p>
+                    <img ng-src="{{store.product[0].image}}"><br><br>
+                    <h5>Price: {{store.product[0].price | currency}} /day</h5>
+                </div>
+                <div class="col-sm-4">
+                    <p>{{store.product[1].name}}</p>
+                    <img ng-src="{{store.product[1].image}}"><br><br>
+                    <h5>Price: {{store.product[1].price | currency}} /day</h5>
+                </div>
+                <div class="col-sm-4">
+                    <p>{{store.product[2].name}}</p>
+                    <img ng-src="{{store.product[2].image}}"><br><br>
+                    <h5>Price: {{store.product[2].price | currency}} /day</h5>
+                </div>
             </div>
         </div>
     </div>
+    
+    
     
     
 </body>

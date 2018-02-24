@@ -7,17 +7,20 @@ app.controller('StoreController', function(){
 var cars = [
         {
             name: "Ferrari",
-            price: 100,
-            image: "Ferrari.jpg"
+            price: 250,
+            image: "Ferrari.jpg",
+            description: "Is really fast car."
         },
         {
             name: "Lamborghini",
-            price: 200,
-            image: "Lamborghini.jpg"
+            price: 500,
+            image: "Lamborghini.jpg",
+            description: "Is very faster car."
         },
         {
             name: "Bugatti",
-            price: 300,
-            image: "Bugatti.jpeg"
+            price: 750,
+            image: "Bugatti.jpeg",
+            description: "Car melts face off."
         }
 ];
