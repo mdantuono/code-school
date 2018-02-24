@@ -19,28 +19,32 @@
         <hr>
         <h4>Our Fleet:</h4><br>
         <div ng-controller="StoreController as store">
-            <div class="row text-center">
-                <div class="col-sm-4">
-                    <p>{{store.product[0].name}}</p>
-                    <img ng-src="{{store.product[0].image}}"><br><br>
-                    <h5>Price: {{store.product[0].price | currency}} /day</h5>
-                </div>
-                <div class="col-sm-4">
-                    <p>{{store.product[1].name}}</p>
-                    <img ng-src="{{store.product[1].image}}"><br><br>
-                    <h5>Price: {{store.product[1].price | currency}} /day</h5>
-                </div>
-                <div class="col-sm-4">
-                    <p>{{store.product[2].name}}</p>
-                    <img ng-src="{{store.product[2].image}}"><br><br>
-                    <h5>Price: {{store.product[2].price | currency}} /day</h5>
+            <div class="row">
+                <div ng-repeat="product in store.product" class="col-sm-4 text-center">
+                    <p>{{product.name}}</p>
+                    <div class="img_wrap">
+                        <img ng-src="{{product.image}}"><br><br>
+                        <p class="img_description">
+                            <br>
+                            <span style="font-size:20px">Description: </span> 
+                            <br> 
+                            {{product.description}} 
+                            <br>
+                            <span style="font-size:20px">Specifications: </span>
+                            <br>
+                            {{product.specs}}
+                        </p>
+                    </div>
+                    <h5>Price: {{product.price | currency}} /day</h5>
+                    <p>Vehicles left: {{product.quantity}}</p>
+                    <button class="btn btn-sm btn-success" ng-click="decrement()">Rent me</button>
+                    <br><br>
                 </div>
             </div>
         </div>
+        <section>
+            
+        </section>
     </div>
-    
-    
-    
-    
 </body>
 </html>

@@ -10,11 +10,30 @@ h4, p, h5 {
     text-align: center;
 }
 img {
-    max-width: 80%;
+    max-width: 100%;
     height:auto;
     border-radius:30px;
     box-shadow: 0 6px 20px 0 black;
 }
-img:hover {
+.img_wrap {
+    position:relative;
+}
+.img_description {
+    color:white;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    max-width:100%;
+    background-color: rgba(0,0,0,.7);
+    opacity:0;
+    transition: opacity .2s, visibility .2s;
+    font-family: 'Bellefair', serif;
+    border-radius:30px;
+}
+.img_wrap:hover .img_description {
+    visibility:visible;
+    opacity:1;
     box-shadow: 0 6px 20px 0 lightblue;
 }
