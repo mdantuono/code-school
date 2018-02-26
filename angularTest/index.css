@@ -35,5 +35,10 @@ img {
 .img_wrap:hover .img_description {
     visibility:visible;
     opacity:1;
-    box-shadow: 0 6px 20px 0 blue;
+    box-shadow: 0 6px 20px 0 #366ec9;
+}
+.btn {
+    background-color: #366ec9;
+    color:white;
+    box-shadow: 0 6px 20px 0 black;
 }
