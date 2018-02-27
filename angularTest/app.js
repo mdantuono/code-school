@@ -32,31 +32,3 @@ var cars = [
             quantity: 10
         }
 ];
-
-if (cars.quantity == 0) {
-    document.getElementById("left").innerHTML = "No cars available";
-}
-// function decrement() {
-//     var num = product.quantity;
-//     var Lnum = cars[1].quantity;
-//     var Bnum = cars[2].quantity;
-//     if(num == 0) {
-//         document.getElementById("left").innerHTML = "No cars available";
-//     }else {
-//         Fnum--;
-//         return Fnum;
-//     }
-//     // if(Lnum == 0) {
-//     //     document.getElementById("left").innerHTML = "No cars available";
-//     // }else {
-//     //     Lnum--;
-//     //     return Lnum;
-//     // }
-//     // if(Bnum == 0) {
-//     //     document.getElementById("left").innerHTML = "No cars available";
-//     // }else {
-//     //     Bnum--;
-//     //     return Bnum;
-//     // }
-//     console.log(Fnum, Lnum, Bnum);
-// }
